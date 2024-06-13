@@ -60,16 +60,7 @@ const BookCard = ({ book, deleteCount, setDeleteCount }: { book: Book, deleteCou
                 >
                     Reading level: <span style={{ fontWeight: 'bold' }}>{book.readingLevel}</span>
                 </motion.p>
-                <motion.p
-                    animate={{
-                        color: elloColors.primary.white,
-                        display: isHover ? "block" : "none",
-                        y: isHover ? 0 : 40,
-                    }}
-                    transition={{ stiffness: 1000, velocity: -100 }}
-                >
-                    Date Added: <span style={{ fontWeight: 'bold' }}>{book.readingLevel}</span>
-                </motion.p>
+
                 <motion.button
                     animate={{
                         color: elloColors.primary.white,
